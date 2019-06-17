@@ -1,0 +1,192 @@
+
+.el-header {
+    height: auto !important;
+    padding: 0 !important;
+} //暂时性解决dialog 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+    transform: none;
+    left: 0;
+    position: relative;
+    margin: 0 auto;
+}
+
+// el-menu组名的样式和菜单选中的样式
+.el-menu-item-group__title {
+    padding: 12px 0 12px 20px !important;
+    font-size: 14px !important;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.el-menu-item:hover {
+    background-color: #e9e9e8 !important
+}
+
+.el-menu-item.is-active {
+    background-color: #f7f6f4 !important
+}
+
+.el-menu-item,
+.el-submenu__title {
+    height: 40px;
+    line-height: 40px;
+}
+
+.el-menu-item {
+    font-size: 12px !important;
+}
+
+.repair-dialog .el-dialog__header {
+    text-align: left;
+}
+
+.stop-use-text {
+    text-align: center;
+    font-size: 16px;
+}
+
+// 产品线管理修改样式
+.dialog-no-padding .el-dialog__body {
+    padding: 0;
+}
+
+.dialog-no-padding .el-dialog__header {
+    padding: 0;
+}
+
+.productLineEdit .strategy-form-box {
+    width: 100%;
+    height: 80vh;
+    overflow: auto;
+}
+
+.noBorder td {
+    border: #fff;
+}
+
+.noBorder::before {
+  display: none;
+}
+
+.noBorder:hover,
+.noBorder .el-table__body tr:hover>td {
+    background-color: #fff !important;
+}
+
+.noBorder .el-table__empty-block {
+    display: none;
+}
+
+.noBorder .cell {
+    padding-left: 0;
+}
+.table_empty_none{
+    border: none;
+}
+.table_empty_none .el-table__empty-block {
+    display: none;
+}
+
+.table_empty_none::before {
+    display: none;
+}
+.el-button{
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+    border:1px solid #5CC2D0;
+    color:#5CC2D0;
+    padding:9px 30px;
+}
+.el-button--primary{
+    background-color: #5CC2D0;
+    border-color: #5CC2D0;
+    color:#fff;
+}
+.el-button--primary:focus,.el-button--primary:hover {
+    background: #5CC2D0;
+    border-color: #5CC2D0;
+}
+
+.el-button--primary.is-active,.el-button--primary:active {
+    background: #5CC2D0;
+    border-color: #5CC2D0;
+}
+.el-aside{
+    width:238px;
+    background:#fff;
+    margin-right:30px;
+}
+.el-main{
+    padding:0;
+}
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+    color: #5CC2D0
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+    background-color: #5CC2D0;
+    color:#fff;
+}
+.el-table .cell{
+    font-size:14px;
+}
+.el-button.is-plain:focus,.el-button.is-plain:hover {
+    background: #FFF;
+    border-color: #5CC2D0;
+    color: #5CC2D0
+}
+
+.el-button.is-active,.el-button.is-plain:active {
+    color: #5CC2D0;
+    border-color: #5CC2D0
+}
+
+.el-button.is-plain:active {
+    background: #FFF;
+    outline: 0
+}
+.el-button:focus,.el-button:hover {
+    color: #fff;
+    border-color: #5CC2D0;
+    background-color: #5CC2D0
+}
+
+.el-button:active {
+    color: #fff;
+    border-color: #5CC2D0;
+    outline: 0
+}
+.layer-wrap .el-dialog{
+    border-radius:8px;;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+    overflow:hidden;
+    padding:0 65px;
+    .details-ruleForm{
+        margin-top:130px;
+    }
+}
+.layer-wrap {
+    .el-dialog__header{
+        padding:0;
+        display:none;
+    }
+    .el-dialog{
+        padding:0;
+    }
+}
+.el-table th>.cell{
+    color:#3B3B4D;
+    font-weight:400;
+}
+.el-message-box--center{
+    width:auto;
+}
+.el-message{
+    min-width:300px;
+}

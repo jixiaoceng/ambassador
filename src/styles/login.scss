@@ -1,0 +1,91 @@
+$public_green: #5CC2D0;
+.register-container {
+    background: url('../assets/public-img/login-background.png') no-repeat bottom center;
+    background-size:cover;
+    width:100vw;
+    min-height:100vh;
+    overflow:hidden;
+    position:relative;
+    .register-logo {
+        width:90%;
+        margin:20px auto 0;
+        height:42px;
+        overflow:hidden;
+        img{
+            width:117px;
+            vertical-align: text-bottom;
+        }
+        span{
+            font-size:22px;
+            color:#fff;
+            margin-left:20px;
+        }
+    }
+    .register-form-wrap {
+        max-width: 300px;
+        margin: 20vh auto;
+        img {
+            display: block;
+            width:165px;
+            margin:0 auto;
+
+        }
+        .err-info {
+            color:#FB500E;
+            font-size:12px;
+            display:block;
+            height:30px;
+            line-height:30px;
+        }
+        .username {
+            margin: 15px 0;
+            padding:5px 0;
+        }
+        .password {
+            margin-bottom: 15px;
+            padding:5px 0;
+        }
+        .enter{
+            margin-bottom:0;
+            padding:5px 0;
+        }
+        .btn-login {
+            height: 45px;
+        }
+        .btn-register {
+            width:100%;
+            font-size:16px;
+        }
+        .go-account{
+            font-size:14px;
+            color:#fff;
+            text-align:center;
+            cursor:pointer;
+            em{
+                font-style: normal;
+                text-decoration:underline;
+            }
+        }
+        .forgot-password{
+            font-size:14px;
+            color:#fff;
+            line-height:15px;
+            height:15px;
+            margin:10px 0 0;
+            text-decoration:underline;
+        }
+    }
+    .el-button--primary,.el-button--primary{
+        background:$public_green;
+        border-color:$public_green;
+    }
+    .footer-communication{
+        position:absolute;
+        width:100%;
+        text-align:center;
+        font-size:12px;
+        left:0;
+        bottom:10px;
+        color:#fff;
+    }
+}
