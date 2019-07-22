@@ -2,7 +2,7 @@
  * @Author: 季芳莉 
  * @Date: 2019-06-04 20:17:04 
  * @Last Modified by: 季芳莉
- * @Last Modified time: 2019-06-12 23:51:33
+ * @Last Modified time: 2019-06-17 12:32:03
  */
 
 
@@ -18,11 +18,27 @@ const handleToken = new HandleToken()
  */
 class HandleParamAndResult {
     constructor () {
+        var LOCAL_HOST = "http://127.0.0.1:8000";
+        var DEV_HOST = "https://www.dev.pplingo.com";
+        var STAGE_HOST = "https://member.stage.pplingo.com";
+        var PROD_HOST = "https://member.lingoace.com/";
+        var HOST = PROD_HOST;
+
+        // 环境判断
+        if (window.location.href.indexOf("stage.pplingo.com") > -1) {
+            HOST = STAGE_HOST;
+        } else if ((window.location.href.indexOf("dev.pplingo.com") > -1)) {
+            HOST = DEV_HOST;
+        } else if ((window.location.href.indexOf("127.0.0.1:8000") > -1)) {
+            HOST = LOCAL_HOST;
+        }
+        this.api = HOST
+        // console.log(this.api)
         // 域名
         // this.api = 'https://www.dev.pplingo.com'
         // this.api = 'http://0.0.0.0:8888'
         // this.api = 'https://member.stage.pplingo.com'
-        this.api = 'https://member.lingoace.com'
+        // this.api = 'https://member.lingoace.com'
     }
 
       // 添加请求头

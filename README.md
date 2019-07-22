@@ -1,6 +1,6 @@
 # global_ambassador_program
 
-> A Vue.js project
+> 城市合伙人
 
 ## Build Setup
 

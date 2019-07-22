@@ -28,7 +28,7 @@
                     auto-complete="on"
                     @keyup.enter.native="handleregister" />
                 </el-form-item>
-                <p class="pointer forgot-password"><a href="https://member.lingoace.com/accounts/password/reset/?container=mobile">Forgot password？</a></p>
+                <!-- <a class="pointer forgot-password"><a href="https://member.lingoace.com/accounts/password/reset/?container=mobile">Forgot password？</a></p> -->
                 <span class="err-info"></span>
                 <el-button
                     class="btn-register"

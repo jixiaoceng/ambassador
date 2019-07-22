@@ -333,6 +333,7 @@ export default {
             }else {
                 ambassadorAccount(params).then(res => {
                     this.accountForm = res.data
+                    this.debitActive = true
                     tage == 'debitEid' ? this.debitHave = false : this.paypalHave = false
                 }).catch(error => {
                     this.$message({
@@ -377,6 +378,7 @@ export default {
                 if (this.accountForm.paypal_email) {
                     this.paypalHave = false
                     this.paypalVisible = true
+                    this.debitActive = true
                 }else{
                     this.paypalHave = true
                     this.paypalVisible = false
@@ -384,6 +386,7 @@ export default {
                 if (this.accountForm.beneficiary_name) {
                     this.debitHave = false
                     this.debitVisible = true
+                    this.debitActive = true
                 }else{
                     this.debitHave = true
                     this.debitVisible = false

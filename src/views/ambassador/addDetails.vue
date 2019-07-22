@@ -47,7 +47,7 @@
                                 </el-select>
                             </el-form-item>
                             <el-form-item label="Occupation：">
-                                <el-input v-model="ruleForm.occupation"></el-input>
+                                <el-input v-model="ruleForm.occupation" maxlength="32"></el-input>
                             </el-form-item>
                             <el-form-item label="WhatsApp：" >
                                 <img src="../../assets/public-img/icon-add.png" alt="">

@@ -85,10 +85,17 @@ export default {
     },
     methods: {
         getInvitationsData () {
-            this.loading = false
             getAmbassadorInvitations(this.searchData).then(res => {
+                this.loading = false
                 this.tableData = JSON.parse(res.data.data)
                 this.total = JSON.parse(res.data.count)
+            }).catch(error => {
+                this.loading = false
+                this.$message({
+                    message: 'Network interruption, please refresh and retry',
+                    type: 'error',
+                    duration: 3000
+                })
             })
         },
         searchTime() { // 日期搜索

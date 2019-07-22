@@ -183,7 +183,7 @@
                     </el-select>
                 </el-form-item>
                 <el-form-item label="Occupation：">
-                    <el-input type="textarea" v-model="ruleForm.occupation"></el-input>
+                    <el-input type="textarea" v-model="ruleForm.occupation" maxlength="32"></el-input>
                 </el-form-item>
                 <el-form-item label="WhatsApp：" >
                     <img src="../../assets/public-img/icon-add.png" alt="">
@@ -331,6 +331,7 @@ export default {
             }else {
                 ambassadorAccount(params).then(res => {
                     this.accountForm = res.data
+                    this.debitActive = true
                     tage == 'debitEid' ? this.debitHave = false : this.paypalHave = false
                 }).catch(error => {
                     this.$message({
@@ -375,12 +376,14 @@ export default {
                 if (this.accountForm.paypal_email) {
                     this.paypalHave = false
                     this.paypalVisible = true
+                    this.debitActive = true
                 }else{
                     this.paypalHave = true
                 }
                 if (this.accountForm.beneficiary_name) {
                     this.debitHave = false
                     this.debitVisible = true
+                    this.debitActive = true
                 }else{
                     this.debitHave = true
                 }
